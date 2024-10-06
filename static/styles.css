@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117; /* Dark background */
+    color: #1f6feb; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: white; /* White color for the heading */
+    background-color: #1f6feb; /* Blue background for the heading */
+    padding: 10px 0; /* Padding for the heading */
+    border-radius: 5px; /* Rounded corners */
+}
+
+h2 {
+    color: white; /* White color for secondary heading */
+    text-align: center; /* Center align h2 */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #161b22; /* Darker background for the container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.tech-stack {
+    color: #8c939c; /* Color for tech stack text */
+    font-size: 0.9em; /* Smaller font size for tech stack */
+    margin-top: 5px; /* Margin for spacing */
+}
+
+.project {
+    border: 1px solid #8c939c; /* Grey border for each project */
+    padding: 10px; /* Padding inside each project box */
+    border-radius: 5px; /* Rounded corners for project boxes */
+    margin-bottom: 10px; /* Space between project boxes */
+}
+
+.project a {
+    text-decoration: none;
+    color: #1f6feb; /* Blue color for project names */
+    font-weight: bold;
+    font-size: 1.2em; /* Larger font size for project names */
+}
+
+.project a:hover {
+    text-decoration: underline;
+    color: #4289f4; /* Change color on hover */
+}
+
+.project-title {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}

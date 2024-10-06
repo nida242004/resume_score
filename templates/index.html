@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1.0"> <!-- Updated link for cache busting -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
+</head>
+<body>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <center><h2>MY PROJECTS</h2></center>
+        {% for project in projects %}
+            <div class="project">
+                <h4 class="project-title">
+                    <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+                </h4>
+                <p class="tech-stack">LANGUAGE USED: {{ project.tech_stack }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
